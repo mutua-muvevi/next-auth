@@ -8,9 +8,10 @@ export const options = {
 				console.log("Profile Github: ", profile)
 
 				let userRole = "Github User"
-				if(profile?.email == "josedeveloper94@gmail.com"){
+				if(profile?.email == "samstore637@gmail.com"){
 					userRole = "Admin"
 				}
+				console.log("User Role:>>>>>>>>>>>>>>>> ", userRole)
 
 				return {
 					...profile,
@@ -26,6 +27,7 @@ export const options = {
 			profile(profile){
 				console.log("Profile Google: ", profile)
 
+				let userRole = "Google User"
 
 				return {
 					...profile,
@@ -39,14 +41,17 @@ export const options = {
 		})
 	],
 
-	callback: {
+	callbacks: {
 		async jwt({token, user}){
 			if (user) token.role = user.role
 			return token
 		},
 
 		async session({session, token}){
-			if(session?.user) session.user.role = token.role 
+			if(session?.user) session.user.role = token.role
+			console.log("Token", token)
+			console.log("Seszion", session)
+			
 			return session
 		}
 	}
