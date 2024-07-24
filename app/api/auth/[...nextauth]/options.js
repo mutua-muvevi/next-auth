@@ -11,7 +11,6 @@ export const options = {
 				if(profile?.email == "samstore637@gmail.com"){
 					userRole = "Admin"
 				}
-				console.log("User Role:>>>>>>>>>>>>>>>> ", userRole)
 
 				return {
 					...profile,
@@ -49,8 +48,8 @@ export const options = {
 
 		async session({session, token}){
 			if(session?.user) session.user.role = token.role
-			console.log("Token", token)
-			console.log("Seszion", session)
+			// console.log("Token", token)
+			// console.log("Seszion", session)
 			
 			return session
 		}

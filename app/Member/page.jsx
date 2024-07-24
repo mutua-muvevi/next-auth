@@ -19,8 +19,6 @@ const Member = async () => {
 			<br/>
 			<br/>
 			<br/>
-			{JSON.stringify(options)}
-			{console.log(session)}
 		</div>
 	);
 };
