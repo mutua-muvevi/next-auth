@@ -1,8 +1,11 @@
+import UserForms from "../(components)/UserForms";
 
 const CreateUser = () => {
 	return (
 		<div>
-			<h1>Only Admins</h1>
+			<div className="flex justify-center align-middle items-center h-screen">
+				<UserForms/>
+			</div>
 		</div>
 	);
 };
