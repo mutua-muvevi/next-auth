@@ -12,3 +12,6 @@ This is for learning purpose 😉. As of the next projects typescript will be th
 
 ## Why are you not using the src folder
 Again this is for learning purpose please get off my back! 😅
+
+## Why in the world would are you not salting the passwords
+This is for learning purpose. Passwords should be salted please for your life's sake ALWAYS SALT PASSWORDS! 🙏🏽
